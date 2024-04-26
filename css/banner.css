@@ -1,0 +1,151 @@
+/* Banners */
+.adicionar-selecionar{
+    display: flex;
+    justify-content: end;
+}
+
+/* TABS */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: var(--color-red) !important;
+    background-color: var(--color-gray-100) !important;
+    border-bottom: 2px solid var(--color-red);
+}
+
+.nav-tabs .nav-link{
+    color: var(--color-white) !important;
+    background-color: var(--color-gray-700) !important;
+    border-bottom: 2px solid var(--color-gray-700);
+}
+
+.responsive-tabs .nav-tabs {
+    display: none;
+}
+
+#tabcontent .card{
+    border-radius: 0 4px 4px 4px;
+    background-color: var(--color-gray-100);
+    border: 1px solid var(--color-gray-200);
+    position: unset !important;
+}
+
+div.dt-container{
+    position: unset !important;
+}
+
+#tabcontent  .card-body{
+    padding: 10px;
+}
+
+/* Elementos Table */
+.caixa-ordem{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid var(--color-gray-300);
+    background-color: var(--color-gray-100);
+    border-radius: 5px;
+    align-items: center;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.caixa-ordem button{
+    border: 0;
+    background-color: var(--color-gray-100);
+}
+
+.img-banner-tabela{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Edit */
+#previaBox{
+    border: 1px solid var(--color-gray-300);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#editRegiao{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .responsive-tabs .nav-tabs {
+        display: flex;
+        border-bottom: 0;
+    }
+
+    .responsive-tabs .card {
+        border: none;
+    }
+
+    .responsive-tabs .card .card-header {
+        display: none;
+    }
+
+    .responsive-tabs .card .collapse {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .adicionar-selecionar{
+        margin-bottom: 20px;
+    }
+
+    .responsive-tabs .tab-pane {
+        display: block !important;
+        opacity: 1;
+    }
+
+    #tabcontent .card{
+        border-radius: 4px;
+        margin-bottom: 20px;
+        background-color: var(--color-white);
+        padding: 8px;
+    }
+
+    #tabcontent .card-body{
+        padding: 8px;
+    }
+
+    #tabcontent .card-header{
+        border-color: var(--color-red);
+        background-color: var(--color-gray-100);
+    }
+
+    #tabcontent .card-header h5 a{        
+        text-decoration: none;
+        color: var(--color-red);
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    #tabcontent .card-header .collapsed{
+        color: var(--color-gray-700);
+    }
+
+    .caixa-ordem{
+        width: 100px;
+        display: inline-flex;
+    }
+
+    .caixa-ordem button{
+        width: 25px;
+    }
+
+     /* Esconde a coluna */
+    #tableUni1 [data-dt-column="1"] {
+        display: none;
+    }
+
+    #tableUni2 [data-dt-column="1"] {
+        display: none;
+    }
+}

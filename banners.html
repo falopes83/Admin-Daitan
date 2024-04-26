@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banners</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/dataTables.dataTables.css">    
+    <link rel="stylesheet" href="lib/datatables/dataTables.dataTables.css">
+    <link rel="stylesheet" href="lib/datatables/responsive.dataTables.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+</head>
+<body>
+    <!--Mobile Menu, Início-->
+    <header>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Botão Menu -->
+                <div class="menu-btn">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>  
+                <div id="logo" class="d-flex align-items-center">
+                    <a href="/"><img src="img/logo-daitan.svg" class="w-100 d-block m-auto p-3" alt="Logo Empresa"></a>
+                </div>                        
+            </div>  
+        </div>
+    </header>
+    <aside class="nav-mobile">
+        <nav class="menu shadow-sm">
+            <div class="p-3">
+                <p>
+                    <i class="fa-solid fa-user me-1 color-red"></i>
+                    <b class="color-gray-500">Usuário:</b> [user]
+                </p>
+                <p class="mb-0">
+                    <a class="btn btn-primary w-100" href="/">
+                        <i class="fa-solid fa-right-to-bracket me-2"></i>
+                        Sair
+                    </a>
+                </p>
+            </div> 
+            <hr>
+            <ul class="menu-nav">                    
+                <li class="nav-item">                        
+                    <a href="admin-home.html" class="nav-link">
+                        <i class="fa-solid fa-house color-red me-2"></i>
+                        Home
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a a data-bs-toggle="collapse" class="subitem" href="#collapseLink" role="button" aria-expanded="false">
+                        <i class="fa-solid fa-briefcase color-red me-2"></i>
+                        Acessórios
+                    </a>        
+                    <div class="collapse submenu" id="collapseLink">                    
+                        <ul style="list-style: none; padding: 0;">
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.1</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.2</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.3</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">                        
+                    <a href="banners.html" class="nav-link">
+                        <i class="fa-solid fa-image color-red me-2"></i>
+                        Banners
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-key color-red me-2"></i>
+                        Consórcio
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-envelope color-red me-2"></i>
+                        E-mails
+                    </a>
+                </li>                    
+                <li class="nav-item">
+                    <a href="seminovos.html" class="nav-link">
+                        <i class="fa-solid fa-car color-red me-2"></i>
+                        Seminovos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-regular fa-calendar color-red me-2"></i>
+                        Revisão
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="unidades.html" class="nav-link">
+                        <i class="fa-solid fa-building color-red me-2"></i>
+                        Unidades
+                    </a>
+                </li>                
+                <li class="nav-item">
+                    <a href="usuarios.html" class="nav-link">
+                        <i class="fa-solid fa-user color-red me-2"></i>
+                        Usuários
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-shop color-red me-2"></i>
+                        Vendas Especiais
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!--Mobile Menu, Fim-->
+
+    <div id="all">
+        <div id="sidebar">  
+            <div class="box">
+                <div id="logo">
+                    <a href="/">
+                        <img src="img/logo-daitan.svg" class="w-100 d-block m-auto p-3" alt="Logo Empresa">
+                    </a>
+                </div>  
+                <div id="nav-list">
+                    <ul class="item-list">
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-house color-red me-2"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a data-bs-toggle="collapse" class="subitem" href="#collapseLink" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-briefcase color-red me-2"></i>
+                                Acessórios
+                            </a>
+                            <div class="collapse" id="collapseLink">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.1</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.2</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.3</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.4</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li class="item-link">
+                            <a href="banners.html">
+                                <i class="fa-solid fa-image color-red me-2"></i>
+                                Banners
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a data-bs-toggle="collapse" class="subitem" href="#collapseLink1" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-key color-red me-2"></i>
+                                Consórcio
+                            </a>
+                            <div class="collapse" id="collapseLink1">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.1</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.2</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.3</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.4</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-envelope color-red me-2"></i>
+                                E-mails
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="seminovos.html">
+                                <i class="fa-solid fa-car color-red me-2"></i>
+                                Seminovos
+                            </a>
+                        </li>                        
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-regular fa-calendar color-red me-2"></i>
+                                Revisão
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="unidades.html">
+                                <i class="fa-solid fa-building color-red me-2"></i>
+                                Unidades
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="usuarios.html">
+                                <i class="fa-solid fa-user color-red me-2"></i>
+                                Usuários
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-shop color-red me-2"></i>
+                                Vendas Especiais
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="user-settings"> 
+                <div class="box bg-white py-4">
+                    <div class="user-date">
+                        04/04/2024 - 09:43
+                    </div>
+
+                    <div class="user-opt">
+                        <p class="mb-0">
+                            <i class="fa-solid fa-user me-1 color-red"></i>
+                            <b class="color-gray-500">Usuário:</b> [USER]
+                        </p>
+                        <p class="mb-0">
+                            <a class="btn btn-primary" href="/">
+                                <i class="fa-solid fa-right-to-bracket me-2"></i>
+                                Sair
+                            </a>
+                        </p>
+                    </div>                        
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>Banners</h1>
+
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="admin-home.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Banners</li>
+                    </ol>
+                </nav>
+                    
+                <div class="adicionar-selecionar">
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        Adicionar Banner
+                    </button>
+                </div>
+
+                <div class="responsive-tabs">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a id="tab-A" href="#pane-A" class="nav-link active" data-bs-toggle="tab" role="tab">Capital</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="tab-B" href="#pane-B" class="nav-link" data-bs-toggle="tab" role="tab">Vale do Paraíba</a>
+                            </li>
+                        </ul>
+                
+                        <div id="tabcontent" class="tab-content" role="tablist">
+                            <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+                                <div class="card-header" role="tab" id="heading-A">
+                                    <h5 class="mb-0">
+                                        <a data-bs-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">
+                                            Capital
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse-A" class="collapse show" data-bs-parent="#content" role="tabpanel"
+                                    aria-labelledby="heading-A">
+                                    <div class="card-body">
+                                    <table id="tableUni1" class="display responsive nowrap w-100">
+                                        <thead>
+                                                <th>Ordem</th>
+                                                <th>Prévia (Desktop)</th>
+                                                <th>Título</th>
+                                                <th>Link</th>
+                                                <th>Janela</th>
+                                                <th>Status</th>
+                                                <th>Ação</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="caixa-ordem">
+                                                    <button onclick="subirBanner('@banner.ID')" class="btn-up" data-id="@banner.ID">
+                                                        <i class="fa-solid fa-arrow-up color-green"></i>
+                                                    </button>
+                                                    <p class="mb-0">
+                                                        <b class="ordem">
+                                                            1
+                                                        </b>
+                                                    </p>
+                                                    <button onclick="descerBanner('@banner.ID')" class="btn-down" data-id="@banner.ID">
+                                                        <i class="fa-solid fa-arrow-down color-red"></i>
+                                                    </button>
+                                                    </div>   
+                                                </td>
+                                                <td>
+                                                    <img src="img/banners/648ea54f-9626-435c-b2e7-c8dd12bea113.webp" class="img-banner-tabela" alt="">
+                                                </td>
+                                                <td>Mega Pregao Daitan Prorro</td>
+                                                <td><a href="#">/linkSP-1</a></td>
+                                                <td>Mesma Janela</td>
+                                                <td><span class="badge bg-success">ATIVO</span></td>
+                                                <td>
+                                                    <a href="banners-edit.html" class="btn btn-outline-primary">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certeza-excluir-modal">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="caixa-ordem">
+                                                    <button onclick="subirBanner('@banner.ID')" class="btn-up" data-id="@banner.ID">
+                                                        <i class="fa-solid fa-arrow-up color-green"></i>
+                                                    </button>
+                                                    <p class="mb-0">
+                                                        <b class="ordem">
+                                                            2
+                                                        </b>
+                                                    </p>
+                                                    <button onclick="descerBanner('@banner.ID')" class="btn-down" data-id="@banner.ID">
+                                                        <i class="fa-solid fa-arrow-down color-red"></i>
+                                                    </button>
+                                                    </div>   
+                                                </td>
+                                                <td>
+                                                    <img src="img/banners/c646b18d-d574-4eb5-bbd4-94045801f261.webp" class="img-banner-tabela" alt="">
+                                                </td>
+                                                <td>Sumaré</td>
+                                                <td><a href="#">/linkSP-2</a></td>
+                                                <td>Mesma Janela</td>
+                                                <td><span class="badge bg-success">ATIVO</span></td>
+                                                <td>
+                                                    <a class="btn btn-outline-primary" asp-route-id="@banner.BannerID" asp-controller="Banner" asp-action="Editar">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certeza-excluir-modal">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="caixa-ordem">
+                                                    <button onclick="subirBanner('@banner.ID')" class="btn-up" data-id="@banner.ID">
+                                                        <i class="fa-solid fa-arrow-up color-green"></i>
+                                                    </button>
+                                                    <p class="mb-0">
+                                                        <b class="ordem">
+                                                            3
+                                                        </b>
+                                                    </p>
+                                                    <button onclick="descerBanner('@banner.ID')" class="btn-down" data-id="@banner.ID">
+                                                        <i class="fa-solid fa-arrow-down color-red"></i>
+                                                    </button>
+                                                    </div>   
+                                                </td>
+                                                <td>
+                                                    <img src="img/banners/c93676dd-9a96-4327-8bfd-c45187973557.webp" class="img-banner-tabela" alt="">
+                                                </td>
+                                                <td>Novo Banner</td>
+                                                <td><a href="#">/linkSP-3</a></td>
+                                                <td>Mesma Janela</td>
+                                                <td><span class="badge bg-success">ATIVO</span></td>
+                                                <td>
+                                                    <a class="btn btn-outline-primary" asp-route-id="@banner.BannerID" asp-controller="Banner" asp-action="Editar">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certeza-excluir-modal">
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div id="pane-B" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+                                <div class="card-header" role="tab" id="heading-B">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false"
+                                            aria-controls="collapse-B">
+                                            Vale do Paraíba
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapse-B" class="collapse" data-bs-parent="#content" role="tabpanel"
+                                    aria-labelledby="heading-B">
+                                    <div class="card-body">
+                                        <table id="tableUni2" class="display responsive nowrap w-100">
+                                            <thead>
+                                                    <th>Ordem</th>
+                                                    <th>Prévia (Desktop)</th>
+                                                    <th>Título</th>
+                                                    <th>Link</th>
+                                                    <th>Janela</th>
+                                                    <th>Status</th>
+                                                    <th>Ação</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="caixa-ordem">
+                                                        <button onclick="subirBanner('@banner.ID')" class="btn-up" data-id="@banner.ID">
+                                                            <i class="fa-solid fa-arrow-up color-green"></i>
+                                                        </button>
+                                                        <p class="mb-0">
+                                                            <b class="ordem">
+                                                                1
+                                                            </b>
+                                                        </p>
+                                                        <button onclick="descerBanner('@banner.ID')" class="btn-down" data-id="@banner.ID">
+                                                            <i class="fa-solid fa-arrow-down color-red"></i>
+                                                        </button>
+                                                        </div>   
+                                                    </td>
+                                                    <td>
+                                                        <img src="img/banners/648ea54f-9626-435c-b2e7-c8dd12bea113.webp" class="img-banner-tabela" alt="">
+                                                    </td>
+                                                    <td>Mega Pregao Daitan Prorro</td>
+                                                    <td><a href="#">/link-1</a></td>
+                                                    <td>Mesma Janela</td>
+                                                    <td><span class="badge bg-success">ATIVO</span></td>
+                                                    <td>
+                                                        <a href="banners-edit.html" class="btn btn-outline-primary">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certeza-excluir-modal">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="caixa-ordem">
+                                                        <button onclick="subirBanner('@banner.ID')" class="btn-up" data-id="@banner.ID">
+                                                            <i class="fa-solid fa-arrow-up color-green"></i>
+                                                        </button>
+                                                        <p class="mb-0">
+                                                            <b class="ordem">
+                                                                2
+                                                            </b>
+                                                        </p>
+                                                        <button onclick="descerBanner('@banner.ID')" class="btn-down" data-id="@banner.ID">
+                                                            <i class="fa-solid fa-arrow-down color-red"></i>
+                                                        </button>
+                                                        </div>   
+                                                    </td>
+                                                    <td>
+                                                        <img src="img/banners/c646b18d-d574-4eb5-bbd4-94045801f261.webp" class="img-banner-tabela" alt="">
+                                                    </td>
+                                                    <td>Sumaré</td>
+                                                    <td><a href="#">/link-2</a></td>
+                                                    <td>Mesma Janela</td>
+                                                    <td><span class="badge bg-success">ATIVO</span></td>
+                                                    <td>
+                                                        <a class="btn btn-outline-primary" asp-route-id="@banner.BannerID" asp-controller="Banner" asp-action="Editar">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certeza-excluir-modal">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="caixa-ordem">
+                                                        <button onclick="subirBanner('@banner.ID')" class="btn-up" data-id="@banner.ID">
+                                                            <i class="fa-solid fa-arrow-up color-green"></i>
+                                                        </button>
+                                                        <p class="mb-0">
+                                                            <b class="ordem">
+                                                                3
+                                                            </b>
+                                                        </p>
+                                                        <button onclick="descerBanner('@banner.ID')" class="btn-down" data-id="@banner.ID">
+                                                            <i class="fa-solid fa-arrow-down color-red"></i>
+                                                        </button>
+                                                        </div>   
+                                                    </td>
+                                                    <td>
+                                                        <img src="img/banners/c93676dd-9a96-4327-8bfd-c45187973557.webp" class="img-banner-tabela" alt="">
+                                                    </td>
+                                                    <td>Novo Banner</td>
+                                                    <td><a href="#">/link-3</a></td>
+                                                    <td>Mesma Janela</td>
+                                                    <td><span class="badge bg-success">ATIVO</span></td>
+                                                    <td>
+                                                        <a class="btn btn-outline-primary" asp-route-id="@banner.BannerID" asp-controller="Banner" asp-action="Editar">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certeza-excluir-modal">
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/fontawesome/js/all.min.js"></script>
+    <script src="lib/datatables/datatables.min.js"></script>
+    <script src="lib/datatables/dataTables.responsive.js"></script>
+    <script src="lib/datatables/responsive.dataTables.js"></script>
+    <script src="js/admin.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#tableUni1').DataTable({
+                language: {
+                    url: 'lib/datatables/pt-BR.json', 
+                    paginate: {
+                        next: '<i class="fa-solid fa-chevron-right color-red"></i>',
+                        previous: '<i class="fa-solid fa-chevron-left color-red"></i>'  
+                    }                    
+                },
+                responsive: true,
+            }); 
+        }); 
+        
+        $(document).ready( function () {
+        $('#tableUni2').DataTable({
+                language: {
+                    url: 'lib/datatables/pt-BR.json',    
+                    paginate: {
+                        next: '<i class="fa-solid fa-chevron-right color-red"></i>',
+                        previous: '<i class="fa-solid fa-chevron-left color-red"></i>'  
+                    }                 
+                },
+                responsive: true,
+            }); 
+        });  
+    </script>
+</body>
+</html>

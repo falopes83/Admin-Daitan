@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/dataTables.dataTables.css">    
+    <link rel="stylesheet" href="lib/datatables/dataTables.dataTables.css">
+    <link rel="stylesheet" href="lib/datatables/responsive.dataTables.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+</head>
+<body>
+    <!--Mobile Menu, Início-->
+    <header>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Botão Menu -->
+                <div class="menu-btn">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>  
+                <div id="logo" class="d-flex align-items-center">
+                    <a href="/"><img src="img/logo-daitan.svg" class="w-100 d-block m-auto p-3" alt="Logo Empresa"></a>
+                </div>                        
+            </div>  
+        </div>
+    </header>
+    <aside class="nav-mobile">
+        <nav class="menu shadow-sm">
+            <div class="p-3">
+                <p>
+                    <i class="fa-solid fa-user me-1 color-red"></i>
+                    <b class="color-gray-500">Usuário:</b> [user]
+                </p>
+                <p class="mb-0">
+                    <a class="btn btn-primary w-100" href="/">
+                        <i class="fa-solid fa-right-to-bracket me-2"></i>
+                        Sair
+                    </a>
+                </p>
+            </div> 
+            <hr>
+            <ul class="menu-nav">                    
+                <li class="nav-item">                        
+                    <a href="admin-home.html" class="nav-link">
+                        <i class="fa-solid fa-house color-red me-2"></i>
+                        Home
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a a data-bs-toggle="collapse" class="subitem" href="#collapseLink" role="button" aria-expanded="false">
+                        <i class="fa-solid fa-briefcase color-red me-2"></i>
+                        Acessórios
+                    </a>        
+                    <div class="collapse submenu" id="collapseLink">                    
+                        <ul style="list-style: none; padding: 0;">
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.1</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.2</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.3</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">                        
+                    <a href="banners.html" class="nav-link">
+                        <i class="fa-solid fa-image color-red me-2"></i>
+                        Banners
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-key color-red me-2"></i>
+                        Consórcio
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-envelope color-red me-2"></i>
+                        E-mails
+                    </a>
+                </li>                    
+                <li class="nav-item">
+                    <a href="seminovos.html" class="nav-link">
+                        <i class="fa-solid fa-car color-red me-2"></i>
+                        Seminovos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-regular fa-calendar color-red me-2"></i>
+                        Revisão
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="unidades.html" class="nav-link">
+                        <i class="fa-solid fa-building color-red me-2"></i>
+                        Unidades
+                    </a>
+                </li>                
+                <li class="nav-item">
+                    <a href="usuarios.html" class="nav-link">
+                        <i class="fa-solid fa-user color-red me-2"></i>
+                        Usuários
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-shop color-red me-2"></i>
+                        Vendas Especiais
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!--Mobile Menu, Fim-->
+
+    <div id="all">
+        <div id="sidebar">  
+            <div class="box">
+                <div id="logo">
+                    <a href="/">
+                        <img src="img/logo-daitan.svg" class="w-100 d-block m-auto p-3" alt="Logo Empresa">
+                    </a>
+                </div>  
+                <div id="nav-list">
+                    <ul class="item-list">
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-house color-red me-2"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a data-bs-toggle="collapse" class="subitem" href="#collapseLink" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-briefcase color-red me-2"></i>
+                                Acessórios
+                            </a>
+                            <div class="collapse" id="collapseLink">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.1</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.2</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.3</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.4</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li class="item-link">
+                            <a href="banners.html">
+                                <i class="fa-solid fa-image color-red me-2"></i>
+                                Banners
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a data-bs-toggle="collapse" class="subitem" href="#collapseLink1" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-key color-red me-2"></i>
+                                Consórcio
+                            </a>
+                            <div class="collapse" id="collapseLink1">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.1</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.2</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.3</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.4</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-envelope color-red me-2"></i>
+                                E-mails
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="seminovos.html">
+                                <i class="fa-solid fa-car color-red me-2"></i>
+                                Seminovos
+                            </a>
+                        </li>                        
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-regular fa-calendar color-red me-2"></i>
+                                Revisão
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="unidades.html">
+                                <i class="fa-solid fa-building color-red me-2"></i>
+                                Unidades
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="usuarios.html">
+                                <i class="fa-solid fa-user color-red me-2"></i>
+                                Usuários
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-shop color-red me-2"></i>
+                                Vendas Especiais
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="user-settings"> 
+                <div class="box bg-white py-4">
+                    <div class="user-date">
+                        04/04/2024 - 09:43
+                    </div>
+
+                    <div class="user-opt">
+                        <p class="mb-0">
+                            <i class="fa-solid fa-user me-1 color-red"></i>
+                            <b class="color-gray-500">Usuário:</b> [USER]
+                        </p>
+                        <p class="mb-0">
+                            <a class="btn btn-primary" href="/">
+                                <i class="fa-solid fa-right-to-bracket me-2"></i>
+                                Sair
+                            </a>
+                        </p>
+                    </div>                        
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>Unidades</h1>
+
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="admin-home.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Unidades</li>
+                    </ol>
+                </nav>
+                    
+                <div class="adicionar-selecionar">
+                    <button class="btn btn-primary mb-4">
+                        <i class="fa-solid fa-plus me-2"></i>
+                        Adicionar Unidade
+                    </button>
+                </div>
+
+                <div class="box2">
+                    <table id="tableUni1" class="display responsive nowrap w-100">
+                        <thead>
+                                <th>Nome</th>
+                                <th>CNPJ</th>
+                                <th>Código NBS</th>
+                                <th>Região</th>
+                                <th>Ação</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CARAGUATATUBA</td>
+                                <td>03647692000314</td>
+                                <td>22</td>
+                                <td>Vale do Paraíba</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SEMINOVOS TAUBATÉ</td>
+                                <td>09448339000200</td>
+                                <td>28</td>
+                                <td>Vale do Paraíba</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DAITAN VALE</td>
+                                <td>67375899000106</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GUARATINGUETA</td>
+                                <td>09448339000391</td>
+                                <td>27</td>
+                                <td>Vale do Paraíba</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SAO JOSE DOS CAMPOS</td>
+                                <td>03647692000152</td>
+                                <td>21</td>
+                                <td>Vale do Paraíba</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DAITAN TAUBATE</td>
+                                <td>09448339000120</td>
+                                <td>26</td>
+                                <td>Vale do Paraíba</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>JABAQUARA</td>
+                                <td>67375899001331</td>
+                                <td>17</td>
+                                <td>Capital</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>POMPEIA</td>
+                                <td>67375899000874</td>
+                                <td>14</td>
+                                <td>Capital</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SUMARÉ</td>
+                                <td>67375899000793</td>
+                                <td>13</td>
+                                <td>Capital</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IBIRAPUERA</td>
+                                <td>67375899000289</td>
+                                <td>12</td>
+                                <td>Capital</td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DAITAN MATRIZ</td>
+                                <td>67375899000106</td>
+                                <td>10</td>
+                                <td></td>
+                                <td>
+                                    <a href="unidades-edit.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/fontawesome/js/all.min.js"></script>
+    <script src="lib/datatables/datatables.min.js"></script>
+    <script src="lib/datatables/dataTables.responsive.js"></script>
+    <script src="lib/datatables/responsive.dataTables.js"></script>
+    <script src="js/admin.js"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#tableUni1').DataTable({
+                language: {
+                    url: 'lib/datatables/pt-BR.json',      
+                    paginate: {
+                        next: '<i class="fa-solid fa-chevron-right color-red"></i>',
+                        previous: '<i class="fa-solid fa-chevron-left color-red"></i>'  
+                    }              
+                },
+                responsive: true,
+            }); 
+        }); 
+    </script>
+</body>
+</html>

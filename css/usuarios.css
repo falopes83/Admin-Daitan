@@ -1,0 +1,38 @@
+#colUser2 .box{
+    width: 100%;
+    position: relative;
+    margin: 0 0 20px 0 !important;
+}
+
+.espaco-tags {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 81%;
+}
+
+
+@media only screen and (max-width: 575px) {
+    .inputUnid{
+        display: block;
+    }
+
+    #colUser2{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #colUser2 .box{
+        margin: auto !important;
+        width: 100%;
+        display: block;
+        
+    }
+
+    .vcenter {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+}

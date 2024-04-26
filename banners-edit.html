@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banners - Edit</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="lib/datatables/datatables.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+</head>
+<body>
+    <!--Mobile Menu, Início-->
+    <header>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Botão Menu -->
+                <div class="menu-btn">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>  
+                <div id="logo" class="d-flex align-items-center">
+                    <a href="/"><img src="img/logo-daitan.svg" class="w-100 d-block m-auto p-3" alt="Logo Empresa"></a>
+                </div>                        
+            </div>  
+        </div>
+    </header>
+    <aside class="nav-mobile">
+        <nav class="menu shadow-sm">
+            <div class="p-3">
+                <p>
+                    <i class="fa-solid fa-user me-1 color-red"></i>
+                    <b class="color-gray-500">Usuário:</b> [user]
+                </p>
+                <p class="mb-0">
+                    <a class="btn btn-primary w-100" href="/">
+                        <i class="fa-solid fa-right-to-bracket me-2"></i>
+                        Sair
+                    </a>
+                </p>
+            </div> 
+            <hr>
+            <ul class="menu-nav">                    
+                <li class="nav-item">                        
+                    <a href="admin-home.html" class="nav-link">
+                        <i class="fa-solid fa-house color-red me-2"></i>
+                        Home
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a a data-bs-toggle="collapse" class="subitem" href="#collapseLink" role="button" aria-expanded="false">
+                        <i class="fa-solid fa-briefcase color-red me-2"></i>
+                        Acessórios
+                    </a>        
+                    <div class="collapse submenu" id="collapseLink">                    
+                        <ul style="list-style: none; padding: 0;">
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.1</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.2</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.3</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Link 2.4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">                        
+                    <a href="banners.html" class="nav-link">
+                        <i class="fa-solid fa-image color-red me-2"></i>
+                        Banners
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-key color-red me-2"></i>
+                        Consórcio
+                    </a>
+                </li>        
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-envelope color-red me-2"></i>
+                        E-mails
+                    </a>
+                </li>                    
+                <li class="nav-item">
+                    <a href="seminovos.html" class="nav-link">
+                        <i class="fa-solid fa-car color-red me-2"></i>
+                        Seminovos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-regular fa-calendar color-red me-2"></i>
+                        Revisão
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="unidades.html" class="nav-link">
+                        <i class="fa-solid fa-building color-red me-2"></i>
+                        Unidades
+                    </a>
+                </li>                
+                <li class="nav-item">
+                    <a href="usuarios.html" class="nav-link">
+                        <i class="fa-solid fa-user color-red me-2"></i>
+                        Usuários
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-shop color-red me-2"></i>
+                        Vendas Especiais
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!--Mobile Menu, Fim-->
+
+    <div id="all">
+        <div id="sidebar">  
+            <div class="box">
+                <div id="logo">
+                    <a href="/">
+                        <img src="img/logo-daitan.svg" class="w-100 d-block m-auto p-3" alt="Logo Empresa">
+                    </a>
+                </div>  
+                <div id="nav-list">
+                    <ul class="item-list">
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-house color-red me-2"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a data-bs-toggle="collapse" class="subitem" href="#collapseLink" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-briefcase color-red me-2"></i>
+                                Acessórios
+                            </a>
+                            <div class="collapse" id="collapseLink">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.1</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.2</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.3</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 2.4</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li class="item-link">
+                            <a href="banners.html">
+                                <i class="fa-solid fa-image color-red me-2"></i>
+                                Banners
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a data-bs-toggle="collapse" class="subitem" href="#collapseLink1" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-key color-red me-2"></i>
+                                Consórcio
+                            </a>
+                            <div class="collapse" id="collapseLink1">
+                                <ul style="list-style: none; padding: 0;">
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.1</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.2</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.3</a>
+                                    </li>
+                                    <li class="subitem-link">
+                                        <a href="#">Link 4.4</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-envelope color-red me-2"></i>
+                                E-mails
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="seminovos.html">
+                                <i class="fa-solid fa-car color-red me-2"></i>
+                                Seminovos
+                            </a>
+                        </li>                        
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-regular fa-calendar color-red me-2"></i>
+                                Revisão
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="unidades.html">
+                                <i class="fa-solid fa-building color-red me-2"></i>
+                                Unidades
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="usuarios.html">
+                                <i class="fa-solid fa-user color-red me-2"></i>
+                                Usuários
+                            </a>
+                        </li>
+                        <li class="item-link">
+                            <a href="#">
+                                <i class="fa-solid fa-shop color-red me-2"></i>
+                                Vendas Especiais
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="user-settings"> 
+                <div class="box bg-white py-4">
+                    <div class="user-date">
+                        04/04/2024 - 09:43
+                    </div>
+
+                    <div class="user-opt">
+                        <p class="mb-0">
+                            <i class="fa-solid fa-user me-1 color-red"></i>
+                            <b class="color-gray-500">Usuário:</b> Fabio Augusto Lopes da Silva
+                        </p>
+                        <p class="mb-0">
+                            <a class="btn btn-primary" href="#">
+                                <i class="fa-solid fa-right-to-bracket me-2"></i>
+                                Sair
+                            </a>
+                        </p>
+                    </div>                        
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>Banners</h1>
+
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="admin-home.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="banners.html">Banners</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Titulo</li>
+                    </ol>
+                </nav>
+
+                
+                    
+                    <div class="row">                          
+                        <div class="col-sm-12 col-md-7 col-lg-7">                            
+                            <div class="box2">
+                                <h2 class="mb-4">Upload</h2>
+                                <div class="mb-4">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">
+                                            <b>Título</b>
+                                        </label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <p>Insira imagem <b>Desktop</b></p>
+
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                    </div>
+                                    <p class="color-gray mb-3">
+                                        <small>
+                                        A imagem deve estar na dimensão 1920 x 630px (Extensão: WEBP)
+                                        </small>
+                                    </p>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <p>Insira imagem <b>Mobile</b></p>
+
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile02"> 
+                                    </div>
+                                    <p class="color-gray mb-3">
+                                        <small>
+                                        A imagem deve estar na dimensão 575 x 705px (Extensão: WEBP)
+                                        </small>
+                                    </p>    
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-sm-12 com-md-7 col-lg-7">
+                                        <div class="mb-3">
+                                            <p class="mb-2"><b>Link</b></p>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 com-md-5 col-lg-5">
+                                        <p class="mb-2"><b>Janela</b></p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Selecione...</option>
+                                            <option value="1">Mesma Janela</option>
+                                            <option value="2">Nova Janela</option>
+                                        </select>
+                                    </div>                                    
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <p class="mb-2"><b>Status</b></p>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Ativo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <p class="mb-2"><b>Região</b></p>
+
+                                        <div id="editRegiao">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  Capital
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                  Vale do Paraíba
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="btnNavfooter">
+                                    <a href="seminovos-unidade.html" id="btnVoltar" class="btn btn-outline-primary">
+                                        Voltar
+                                    </a>
+                                    <button id="btnSalvar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#salvarEdit">
+                                        <i class="fa-solid fa-floppy-disk me-2"></i>
+                                        Salvar
+                                    </button>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-12 col-md-5 col-lg-5">
+                            <div id="previaBox" class="p-3">
+                                <p class="color-red"><b>Prévia</b></p>
+
+                                <div class="box2 mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><b>Mobile</b></p>
+                                        <button class="btn btn-primary">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="my-3">
+                                        <p class="mb-0 text-center">[imagem]</p>
+                                    </div>                                    
+
+                                    <p class="color-gray text-center mb-0"><small>
+                                        648ea54f-9626-435c-b2e7-c8dd12bea113.webp
+                                    </small></p>
+                                </div>
+
+                                <div class="box2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><b>Mobile</b></p>
+                                        <button class="btn btn-primary">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="my-3">
+                                        <p class="mb-0 text-center">[imagem]</p>
+                                    </div>                                    
+
+                                    <p class="color-gray text-center mb-0"><small>
+                                        648ea54f-9626-435c-b2e7-c8dd12bea113.webp
+                                    </small></p>
+                                </div>                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="salvarEdit" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">            
+            <div class="modal-body">
+                <i class="fa-solid fa-circle-check fa-2x d-block m-auto color-green mb-3"></i>
+            
+                <p class="text-center">Modelo cadastrado com sucesso!</p>
+            </div>
+            <button type="button" class="btn btn-primary d-block m-auto" style="width: 120px;" onclick="location.href='seminovos-unidade.html';">
+                OK
+            </button>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/fontawesome/js/all.min.js"></script>
+    <script src="js/admin.js"></script>    
+</body>
+</html>

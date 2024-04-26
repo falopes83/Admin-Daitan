@@ -1,0 +1,56 @@
+#colUnid1{
+    grid: 1;
+}
+
+.inputUnid{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.inputUnid label{
+    width: 100px;
+}
+
+#colUnid2{
+    grid: 2;
+    display: flex;
+}
+
+#colUnid2 .box{
+    width: 100%;
+    position: relative;
+    margin: 0 0 20px 0 !important;
+}
+
+.vcenter{
+    position: absolute; 
+    top: 50%; 
+    left: 40%; 
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 575px) {
+    .inputUnid{
+        display: block;
+    }
+
+    #colUnid2{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #colUnid2 .box{
+        margin: auto !important;
+        width: 100%;
+        display: block;
+        
+    }
+
+    .vcenter {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+}
